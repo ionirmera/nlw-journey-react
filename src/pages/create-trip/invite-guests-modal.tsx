@@ -25,6 +25,7 @@ export function InviteGuestsModal({
               <X className="size-5 text-zinc-400" />
             </button>
           </div>
+
           <p className="text-sm text-zinc-400">
             Os convidados irão receber e-mails para confirmar a participação na
             viagem.
@@ -49,6 +50,7 @@ export function InviteGuestsModal({
             );
           })}
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
 
         <form
@@ -64,8 +66,8 @@ export function InviteGuestsModal({
               className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
             />
           </div>
-          
-          <Button type="submit" variant="primary" >
+
+          <Button type="submit" variant="primary">
             Convidar
             <Plus className="size-5" />
           </Button>
@@ -74,4 +76,3 @@ export function InviteGuestsModal({
     </div>
   );
 }
-
