@@ -1,4 +1,4 @@
-import { Plus, } from "lucide-react";
+import { Plus } from "lucide-react";
 import { useState } from "react";
 import { CreateActivityModal } from "./create-activity-modal";
 import { ImportantLinks } from "./important-links";
@@ -8,7 +8,6 @@ import { DestinationAndDateHeader } from "./destination-and-date-header";
 
 export function TripDetailsPage() {
   const [isCreateActivityModalOpen, setIsCreateActivityModalOpen] = useState(false)
-
 
   function openCreateActivityModal() {
     setIsCreateActivityModalOpen(true)
@@ -41,12 +40,14 @@ export function TripDetailsPage() {
 
           <div className="w-full h-px bg-zinc-800" />
 
-          <Guests/>
+          <Guests />
         </div>
       </main>
 
       {isCreateActivityModalOpen && (
-        <CreateActivityModal closeCreateActivityModal={closeCreateActivityModal} />
+        <CreateActivityModal 
+          closeCreateActivityModal={closeCreateActivityModal}
+        />
       )}
     </div>
   )
